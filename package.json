@@ -20,7 +20,7 @@
     "main": "dist/preloader.es.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/punkpette/assets-preloader.git"
+        "url": "git+https://github.com/punkpette/preloader-es6.git"
     },
     "keywords": [
         "assets",
@@ -33,7 +33,7 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/punkpette/assets-preloader/issues"
+        "url": "https://github.com/punkpette/preloader-es6/issues"
     },
-    "homepage": "https://github.com/punkpette/assets-preloader#readme"
+    "homepage": "https://github.com/punkpette/preloader-es6#readme"
 }
