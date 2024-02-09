@@ -1,4 +1,4 @@
-# Assets Loader
+# Preloader ES6
 
 [![experimental](https://badges.github.io/stability-badges/dist/experimental.svg)](https://github.com/badges/stability-badges)
 
@@ -18,9 +18,9 @@ This is the ES6 version of Preloader from [Experience-Monks](https://github.com/
 Here is a common usage of the preloader.
 
 ```js
-import AssetsPreloader from 'assets-preloader';
+import Preloader from 'preloader-es6';
 
-const loader = AssetsPreloader({
+const loader = Preloader({
     xhrImages: false
 });
 loader.on('progress', function (progress) {

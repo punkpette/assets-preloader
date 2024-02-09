@@ -1,4 +1,4 @@
 // index.js
-import AssetsPreloader from './assets-preloader.js';
+import Preloader from './preloader.js';
 
-export default AssetsPreloader;
+export default Preloader;

@@ -6,8 +6,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: './src/index.js',
-      name: 'AssetsPreloader', // Global variable name for UMD format
-      fileName: (format) => `assets-preloader.${format}.js`,
+      name: 'Preloader', // Global variable name for UMD format
+      fileName: (format) => `preloader.${format}.js`,
       plugins: [
         nodePolyfills({
           include: null

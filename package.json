@@ -14,10 +14,10 @@
         "preview": "vite dist",
         "build": "vite build"
     },
-    "name": "assets-preloader",
+    "name": "preloader-es6",
     "description": "[![experimental](https://badges.github.io/stability-badges/dist/experimental.svg)](https://github.com/badges/stability-badges)",
     "version": "1.0.0",
-    "main": "dist/assets-preloader.es.js",
+    "main": "dist/preloader.es.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/punkpette/assets-preloader.git"
