@@ -16,7 +16,7 @@
     },
     "name": "preloader-es6",
     "description": "[![experimental](https://badges.github.io/stability-badges/dist/experimental.svg)](https://github.com/badges/stability-badges)",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "dist/preloader.es.js",
     "repository": {
         "type": "git",
