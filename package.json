@@ -1,0 +1,39 @@
+{
+    "devDependencies": {
+        "fs": "^0.0.1-security",
+        "prettier": "^3.2.5",
+        "rollup-plugin-polyfill-node": "^0.13.0",
+        "vite": "^5.1.0"
+    },
+    "dependencies": {
+        "base64mime": "^0.0.3",
+        "events": "^3.3.0"
+    },
+    "scripts": {
+        "dev": "vite src",
+        "preview": "vite dist",
+        "build": "vite build"
+    },
+    "name": "assets-preloader",
+    "description": "[![experimental](https://badges.github.io/stability-badges/dist/experimental.svg)](https://github.com/badges/stability-badges)",
+    "version": "1.0.0",
+    "main": "dist/assets-preloader.es.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/punkpette/assets-preloader.git"
+    },
+    "keywords": [
+        "assets",
+        "preloader"
+    ],
+    "author": {
+        "name": "Liliana Iturribarria",
+        "email": "punkpette@gmail.com",
+        "url": "https://github.com/punkpette"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/punkpette/assets-preloader/issues"
+    },
+    "homepage": "https://github.com/punkpette/assets-preloader#readme"
+}

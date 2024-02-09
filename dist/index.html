@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script type="module">
+            import AssetsPreloader from './assets-preloader.es.js';
+
+            (function () {
+                const loader = new AssetsPreloader({
+                    xhrImages: false
+                });
+
+                loader.on('progress', function (progress) {
+                    console.log(progress);
+                });
+
+                loader.on('complete', function () {
+                    var data = loader.get('https://dummyjson.com/products/1');
+                    console.log('all content loaded:', data.success);
+                });
+
+                loader.add('assets/test.mp4', {
+                    onComplete: function (content) {
+                        const video = loader.get('assets/test.mp4');
+                        video.setAttribute('controls', true);
+                        document.body.appendChild(video);
+                    }
+                });
+
+                loader.add('https://bg-so-1.zippyimage.com/2020/07/21/1240971006.jpg', {
+                    onComplete: function (content) {
+                        document.body.appendChild(content);
+                    }
+                });
+                loader.add(
+                    'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEACAhITMkM1EwMFFCLy8vQiccHBwcJyIXFxcXFyIRDAwMDAwMEQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwBIjMzNCY0IhgYIhQODg4UFA4ODg4UEQwMDAwMEREMDAwMDAwRDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDP/AABEIAAYABgMBIgACEQEDEQH/xABVAAEBAAAAAAAAAAAAAAAAAAAAAxAAAQQCAwEAAAAAAAAAAAAAAgABAxQEIxIkMxMBAQAAAAAAAAAAAAAAAAAAAAARAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AIE7MwkbOUJDJWx+ZjXATitx2/h2bEWvX5Y0npQ7aIiD/9k=',
+                    {
+                        onComplete: function (content) {
+                            document.body.appendChild(content);
+                        }
+                    }
+                );
+
+                loader.add('https://dummyjson.com/products/1');
+
+                loader.load();
+            })();
+        </script>
+    </body>
+</html>
